@@ -1,0 +1,13 @@
+const express = require('express');
+const app = express();
+
+
+app.get('/greeting', (req, res) => {
+  
+  res.send({ hi: 'there for real?' });
+  
+  
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
